@@ -1,38 +1,165 @@
 .App {
   text-align: center;
+  position: relative;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-img-top {
+  width: 280px;
+  height: 170px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav{
+  width: 100%;
+  height: 60px;
+  margin-top: 2px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 250);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+li{
+  margin-top: 5px;
+  font-size: 20px;
   color: white;
+  padding-left: 20px;
+  
+  
+}
+.navbar-brand{
+  font-size: 30px;
+  transition: cubic-bezier();
+}
+.quantityButton{
+  min-width: 120px;
+  border: 1px solid #222;
+  font-family: Arail;
+  width:120px;
+  border-radius: 40px;
+  margin:0 auto;
+  margin-top: 20px;
+}
+.quantityButton span{
+  font-size:18px;
+  margin:15px;
+
+}
+.quantityButton Button{
+  top:0;
+  width:35px;
+  height:30px;
+  line-height: 35px;
+  font-size: 18px;
+  border: 0;
+  background: 0 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cartImage{
+  
+  margin-left: 950px;
+ 
+}
+img{
+  width: 70px;
+  height:50px;
+}
+.cartImage button{
+  
+width: fit-content;
+color: white;
+ 
+}
+.CartTotalPriceContainer{
+  text-align: center;
+  padding: 10px;
+}
+.cartTotalPrice{
+  font-weight: 700px;
+  font-size: 30px;
+  color:blue
+}
+.product{
+  margin-top: 25px;
+  padding-top: 2px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 250);
+}
+.thalicontainer{
+  width: 500px;
+  margin-left: 420px;
+  height:auto;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 250);
+  margin-top: 20px;
+
+}
+.removebtn{
+  margin-left: 260px;
+  margin-top: 17px;
+  position:fixed;
+}
+.cartItem{
+  width: 450px;
+  margin-left: 25px;
+  margin-top: 17px;
+  background-color: rgb(222, 236, 248);
+  border-radius: 5px;
+}
+.checkout button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 150px;
+}
+.description{
+  justify-content: baseline;
+  text-align: justify;
+}
+.thali{
+  
+  
+  margin-left:500px;
+  margin-top:20px;
+} 
+.navbar-brand{
+  text-decoration: solid;
+  font-weight: 500px;
+  text-decoration-style: solid;
+  text-shadow: 4px 5px 5px blue;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+.Footer{
+  display: flex;
+  /* width: 100%;
+  height: 150px; */
+  color:white;
+  padding-top: 15px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 250);
+  background-color: rgb(47, 77, 243);
+margin-top: 20px;
+margin-bottom: 0px;
+position: sticky;
+
+
+
+
+  
+  
+  
+  
+  
+}
+.foot1{
+  margin-left: 50px;
+}
+.foot2{
+  margin-left: 100px;
+}
+.foot3{
+  margin-left: 150px;
+}
+.foot4{
+  margin-left: 200px;
+}
+.Footer ul{
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

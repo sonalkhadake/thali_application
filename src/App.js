@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import './index.css';
+import React from "react";
+import Menu from "./components/Products/Menu";
+import OrderSummary from './components/Carts/OrderSummary'
+import Navbar from "./components/Navbar";
+import Thali from "./components/Carts/Thali";
+import Footer from "./components/Footer";
+
+
+
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
+
+
 
 function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <BrowserRouter>
+       
+      < Navbar/>
+      
+            <Routes>
+
+  
+      <Route path="/" element={<Menu/>}exact/>
+      <Route path="/Thali" element={<Thali/>}exact/>
+         <Route path="/OrderSummary" element={<OrderSummary/>}/>
+      
+    </Routes>
+    {/* <Footer/> */}
+  </BrowserRouter>,
+     <Footer/>
+  
     </div>
   );
 }
-
 export default App;
